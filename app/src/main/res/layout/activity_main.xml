@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent" 
+	    android:layout_height="0dip"
+	    android:layout_weight="1" >
+	    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/llRoot"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="アカウント追加"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginTop="20sp"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="アカウント削除"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginTop="20sp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggleButtonVibe"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOff="振動通知 OFF"
+                android:textOn="振動通知 ON" />
+
+        </LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

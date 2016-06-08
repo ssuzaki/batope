@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">バトオペ出撃Notifier</string>
+    <string name="menu_version">バージョン情報</string>
+    <string name="menu_tweet">アプリをシェア</string>
+    <string name="menu_review">アプリを評価</string>
+    <string name="menu_exit">終了</string>
+    <string name="go">出\n撃\n！</string>
+    
+</resources>
